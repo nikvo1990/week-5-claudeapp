@@ -69,7 +69,7 @@ AZURE_AGENT_ENDPOINT_URL=
 AZURE_AGENT_ID=
 
 # Auth callback
-NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL=https://your-site.netlify.app
 ```
 
 Copy `.env.local.example` to `.env.local` and fill in all values before starting the app.
