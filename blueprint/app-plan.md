@@ -92,7 +92,7 @@ AZURE_TENANT_ID=                 # Azure tenant ID
 AZURE_AGENT_ENDPOINT_URL=        # https://<name>.services.ai.azure.com/api/projects/<project>
 AZURE_AGENT_ID=                  # asst_xxx from Azure AI Foundry
 
-NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL=http://localhost:PORT
 ```
 
 ---
@@ -204,7 +204,7 @@ Result stored in `documentText` state (component only, never persisted).
 ## Phase 8 — Azure AI Integration
 
 ### OAuth setup (one-time)
-1. Azure Portal → App Registration → add redirect URI: `http://localhost:3000/api/auth/microsoft/callback`
+1. Azure Portal → App Registration → add redirect URI: `http://localhost:PORT/api/auth/microsoft/callback`
 2. Add permission: Azure Machine Learning → `user_impersonation` → grant admin consent
 3. Create client secret → copy to `.env.local`
 
@@ -321,7 +321,7 @@ Without this token, `/api/chat` returns 401 and the chat shows an error step.
 ### Step 2 — Auth
 1. Fill `.env.local` with Supabase URL + anon key
 2. Restart dev server
-3. Go to `http://localhost:3000/signup` → create account
+3. Go to `http://localhost:PORT/signup` → create account
 4. Check `users` table in Supabase — row should appear with bcrypt hash
 5. Log out → go to `/login` → sign in with same credentials
 6. Confirm redirect to `/dashboard`

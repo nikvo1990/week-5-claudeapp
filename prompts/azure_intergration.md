@@ -181,7 +181,7 @@ npm install openai --legacy-peer-deps
 ## HOW TO VERIFY IT WORKS
 
 1. `npm run dev`
-2. Open http://localhost:3000, log in, click New chat
+2. Open http://localhost:PORT, log in, click New chat
 3. Attach a PDF contract
 4. Ask: "Summarise this contract in two sentences"
 5. Expected: real AI response from the agent appears in the chat

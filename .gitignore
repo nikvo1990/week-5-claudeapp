@@ -13,5 +13,8 @@ out/
 # netlify build output
 .netlify/
 
+# local claude settings
+.claude/settings.local.json
+
 # misc
 .DS_Store

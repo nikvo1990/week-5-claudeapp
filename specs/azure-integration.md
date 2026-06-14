@@ -45,7 +45,7 @@ The app connects to an Azure AI Agent hosted in Azure AI Foundry. All AI calls a
 
 1. Go to Azure Portal → Azure Active Directory → App registrations → New registration
 2. Set redirect URIs:
-   - `http://localhost:3000/api/auth/microsoft/callback` (development)
+   - `http://localhost:PORT/api/auth/microsoft/callback` (development)
    - `https://yourdomain.com/api/auth/microsoft/callback` (production)
 3. Add API permission: Azure Machine Learning → Delegated → `user_impersonation`
 4. Grant admin consent for the permission
@@ -63,7 +63,7 @@ The app connects to an Azure AI Agent hosted in Azure AI Foundry. All AI calls a
 | `AZURE_TENANT_ID` | App registrations → your app → Directory (tenant) ID | Azure AD tenant |
 | `AZURE_AGENT_ENDPOINT_URL` | AI Foundry → your project → Overview → endpoint URL | Format: `https://<name>.services.ai.azure.com/api/projects/<project>` |
 | `AZURE_AGENT_ID` | AI Foundry → your project → Agents → click agent → copy `asst_xxx` ID | Must be `asst_xxx` format — not the display name |
-| `NEXTAUTH_URL` | Set manually | `http://localhost:3000` for dev; production URL for prod |
+| `NEXTAUTH_URL` | Set manually | `http://localhost:PORT` for dev; production URL for prod |
 
 ---
 

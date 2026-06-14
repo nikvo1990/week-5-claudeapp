@@ -47,7 +47,7 @@ Collect these five values from the user before the app can call Azure AI:
 
 1. Go to Azure Portal → Azure Active Directory → App registrations → New registration
 2. Set redirect URIs:
-   - `http://localhost:3000/api/auth/microsoft/callback` (dev)
+   - `http://localhost:PORT/api/auth/microsoft/callback` (dev)
    - `https://yourdomain.com/api/auth/microsoft/callback` (production)
 3. Add API permission: Azure Machine Learning → Delegated → `user_impersonation`
 4. Grant admin consent for the permission
